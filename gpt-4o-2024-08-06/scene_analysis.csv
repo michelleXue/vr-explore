@@ -1,0 +1,59 @@
+pic_name,scene_type,object_name,relationship_horizontal,relationship_vertical,relationship_distance,color,orientation,location,brightness,shape,texture,material
+scene_easy_1_1,Bathroom,Toilet A,middle,center,near,white,facing forward,middle-center,light,rectangular top with a rounded bowl,smooth,porcelain
+scene_easy_1_1,Bathroom,Toilet Brush Holder A,right,down,near,white with grey base,upright,right-down,light,cylindrical,smooth,plastic and metal
+scene_easy_1_1,Bathroom,Toilet Paper Holder A,right,center,near,white,facing left,right-center,light,cylindrical,smooth,paper and metal
+scene_easy_1_1,Bathroom,Wall Baseboard A,middle,center,far,white,horizontal,middle-left to middle-right,light,rectangular,smooth,wood
+scene_easy_2_1,dining room,Chair A,left,down,mid-range,dark brown,facing towards the table,center of the scene,dark,rectangular with a backrest,smooth,wood
+scene_easy_2_1,dining room,Chair B,center,down,mid-range,dark brown,facing towards the table,center of the scene,dark,rectangular with a backrest,smooth,wood
+scene_easy_2_1,dining room,Chair C,right,down,mid-range,dark brown,facing towards the table,center of the scene,dark,rectangular with a backrest,smooth,wood
+scene_easy_2_1,dining room,Table,center,center,mid-range,dark grey,horizontal,center of the scene,dark,rectangular,smooth,metal or plastic
+scene_easy_3_1,kitchen,Espresso Machine,left,up,near,red,front-facing,on the counter,dim,rectangular,metallic,metal
+scene_easy_3_1,kitchen,Microwave,right,up,near,white,front-facing,on the counter,dim,rectangular,smooth,metal
+scene_easy_3_1,kitchen,Toaster,middle,up,near,white,front-facing,on the counter,dim,rectangular,smooth,plastic
+scene_easy_3_1,kitchen,Wall Lamp,left,up,mid-range,black and white,upright,attached to the wall,bright,curved,smooth,metal and fabric
+scene_hard_1_1,dining room,Chair A,left,center,mid-range,dark brown,facing table,left side of the table,dark,rectangular,smooth,wood
+scene_hard_1_1,dining room,Chair B,left,center,mid-range,dark brown,facing table,left side of the table,dark,rectangular,smooth,wood
+scene_hard_1_1,dining room,Chair C,middle,center,far,dark brown,facing inward,far side of the table,dark,rectangular,smooth,wood
+scene_hard_1_1,dining room,Chair D,middle,center,far,dark brown,facing inward,far side of the table,dark,rectangular,smooth,wood
+scene_hard_1_1,dining room,Chair E,right,center,mid-range,dark brown,facing table,right side of the table,dark,rectangular,smooth,wood
+scene_hard_1_1,dining room,Chair F,right,center,mid-range,dark brown,facing table,right side of the table,dark,rectangular,smooth,wood
+scene_hard_1_1,dining room,Mirror,middle,up,far,dark frame,vertical,far wall at center,dark,oval,smooth,wood
+scene_hard_1_1,dining room,Painting A,left,up,far,dark frame,vertical,left side wall,dark,rectangular,smooth,wood
+scene_hard_1_1,dining room,Painting B,right,up,far,dark frame,vertical,right side wall,dark,rectangular,smooth,wood
+scene_hard_1_1,dining room,Table,middle,center,mid-range,dark brown,horizontal,center of the room,dark,rectangular,smooth,wood
+scene_hard_1_1,dining room,Wallpaper,middle,center,far,beige,vertical,wall in background,dark,flat,patterned,paper
+scene_hard_2_1,kitchen,Cabinet A,middle,center,mid-range,brown,front-facing,center back of the room,dark,rectangular,smooth,wood
+scene_hard_2_1,kitchen,Glass A,middle,up,mid-range,white,upright,on the shelves of Cabinet A,medium,cylindrical,smooth,glass
+scene_hard_2_1,kitchen,Glass B,middle,up,mid-range,white,upright,on the shelves of Cabinet A,medium,cylindrical,smooth,glass
+scene_hard_2_1,kitchen,Glass C,middle,up,mid-range,white,upright,on the shelves of Cabinet A,medium,cylindrical,smooth,glass
+scene_hard_2_1,kitchen,Lamp A,right,up,mid-range,brass,wall-mounted,on the wall to the right of Cabinet A,medium,sconce,smooth,metal
+scene_hard_2_1,kitchen,Plate A,middle,center,mid-range,white,stacked,on the bottom shelf of Cabinet A,medium,round,smooth,ceramic
+scene_hard_2_1,kitchen,Trash Can A,left,down,mid-range,black,upright,left side of the room,dark,cylindrical,smooth,plastic
+scene_hard_3_1,room with a bookshelf,Binder D,right,up,mid-range,blue,upright,top shelf of Bookshelf A,dim,rectangular,smooth,plastic
+scene_hard_3_1,room with a bookshelf,Book G,left,down,mid-range,black,lying down,fourth shelf of Bookshelf A,dim,rectangular,smooth,paper
+scene_hard_3_1,room with a bookshelf,Books B,left,up,mid-range,multicolored,stacked,top shelf of Bookshelf A,dim,rectangular,smooth,paper
+scene_hard_3_1,room with a bookshelf,Bookshelf A,middle,center,mid-range,brown,upright,against the wall,dim,rectangular,smooth,wood
+scene_hard_3_1,room with a bookshelf,Magazines F,right,center,mid-range,multicolored,stacked,second shelf of Bookshelf A,dim,rectangular,smooth,paper
+scene_hard_3_1,room with a bookshelf,Pencil C,middle,up,mid-range,pink,angled,top shelf of Bookshelf A,dim,cylindrical,smooth,wood
+scene_hard_3_1,room with a bookshelf,Phone E,left,center,mid-range,black and white,lying down,second shelf of Bookshelf A,dim,rectangular,smooth,metal and glass
+scene_medium_1_1,study room,Book A,right,down,mid-range,blue,back-facing,on the desk,dim,rectangular,smooth,paper and cardboard
+scene_medium_1_1,study room,Cassette A,middle,center,mid-range,various,back-facing,on the shelf,dim,rectangular,smooth,plastic
+scene_medium_1_1,study room,Cassette B,middle,center,mid-range,various,back-facing,on the shelf,dim,rectangular,smooth,plastic
+scene_medium_1_1,study room,Cassette C,center,down,mid-range,black,back-facing,on the desk,dim,rectangular,smooth,plastic
+scene_medium_1_1,study room,Desk A,center,down,mid-range,brown,horizontal,on the desk,dim,rectangular,wooden,wood
+scene_medium_1_1,study room,Globe A,left,down,mid-range,multicolored,back-facing,on the desk,dim,spherical,smooth,plastic
+scene_medium_1_1,study room,Newspaper A,center,down,mid-range,gray,back-facing,on the desk,dim,rectangular,smooth,paper
+scene_medium_1_1,study room,Shelf A,center,center,mid-range,brown,back-facing,center of the scene,dim,rectangular,wooden,wood
+scene_medium_1_1,study room,Wall Lamp A,left,up,mid-range,brown,left-facing,left wall,dim,rectangular,smooth,metal and fabric
+scene_medium_2_1,kitchen,Coffee Cup A,left,center,mid-range,blue,upright,on the counter,dark,cylindrical,smooth,plastic
+scene_medium_2_1,kitchen,Coffee Cup B,center,center,mid-range,blue,upright,on the counter,dark,cylindrical,smooth,plastic
+scene_medium_2_1,kitchen,Dishwasher,left,down,mid-range,silver,vertical,below the counter,moderate,rectangular,smooth,metal
+scene_medium_2_1,kitchen,Mug,right,center,mid-range,blue,upright,on the counter,dark,cuboid with a handle,smooth,plastic
+scene_medium_2_1,kitchen,Sink,right,center,mid-range,grey,horizontal,on the counter,moderate,rectangular,smooth,metal
+scene_medium_2_1,kitchen,Wall Decoration,right,center,mid-range,grey,horizontal,above the counter,dark,octagonal,smooth,metal
+scene_medium_3_1,nursery,Chair A,right,up,far,brown,upright,right,dim,rectangular,smooth,wood
+scene_medium_3_1,nursery,Chair B,right,up,far,brown,upright,right,dim,rectangular,smooth,wood
+scene_medium_3_1,nursery,Crib A,left,up,far,light wood,upright,left,dim,rectangular,smooth,wood
+scene_medium_3_1,nursery,Crib B,middle,up,far,light wood,upright,left,dim,rectangular,smooth,wood
+scene_medium_3_1,nursery,Rocking Horse,middle,center,mid-range,brown and black,lying flat,center,dim,horse-shaped,smooth,wood
+scene_medium_3_1,nursery,Wall Lamp,middle,up,far,beige,fixed to wall,center,dim,round,smooth,metal and fabric
