@@ -109,11 +109,11 @@ def process_images_in_folder(folder_path):
         # Construct full file path
         file_path = os.path.join(folder_path, filename)
         
-        # Check if it's an image file (you can add more extensions if needed)
-        if filename.lower().endswith(('_1.png')):
+        # Check if it's an image file
+        if filename.lower().endswith(('_1.png', '_6.png', '_11.png')):
             # Analyze the image
             result = analyze_image(file_path)
             
 if __name__ == "__main__":
-    folder_path = "/Users/qzydustin/Downloads/screenshot final"
+    folder_path = "dataset"
     process_images_in_folder(folder_path)
