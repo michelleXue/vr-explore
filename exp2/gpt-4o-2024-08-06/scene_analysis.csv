@@ -1,0 +1,99 @@
+pic_name,scene_type,object_name,relationship_with_user,color,orientation,location,brightness,shape,texture
+scene_easy_1_1,Bathroom,Toilet,Center + Lower + Moderate,White,Upright,Center,Neutral,Rectangular and round,Smooth + Porcelain
+scene_easy_1_1,Bathroom,Toilet brush holder,Right + Lower + Moderate,White and gray,Upright,Right,Neutral,Cylindrical,Smooth + Plastic or metal
+scene_easy_1_1,Bathroom,Toilet paper holder,Right + Middle + Moderate,White,Horizontal,Right wall,Neutral,Cylindrical,Smooth + Paper and metal
+scene_easy_1_11,bathroom,toilet,center + center + near,white,upright,center,medium,rectangular,smooth + ceramic
+scene_easy_1_11,bathroom,toilet paper roll,right + upper + near,white,vertical,right,medium,cylindrical,soft + paper
+scene_easy_1_6,bathroom,toilet,center + bottom + mid-distance,white,upright,center,dark,oval,smooth + ceramic
+scene_easy_1_6,bathroom,toilet paper roll,right + center + mid-distance,white,vertical,center-right,dark,cylindrical,soft + paper
+scene_easy_2_1,indoor furniture setup,chairs,surrounding the table + bottom half + near,dark brown,vertical,around the table,dark,rectangular,smooth + wood
+scene_easy_2_1,indoor furniture setup,table,center + center + near,dark brown,horizontal,center,dark,rectangular,smooth + wood
+scene_easy_2_11,Indoor,Chair,Left + Center + Medium,Brown,Vertical,Around Table,Medium,Rectangular,Wooden + Wood
+scene_easy_2_11,Indoor,Chair,Center Right + Center + Medium,Brown,Vertical,Around Table,Medium,Rectangular,Wooden + Wood
+scene_easy_2_11,Indoor,Table,Center + Center + Medium,Black,Horizontal,Floor,Dark,Rectangular,Smooth + Metal
+scene_easy_2_6,indoor_dining_area,chair,left + middle + far,dark,vertical,around the table,dark,rectangular,smooth + wood
+scene_easy_2_6,indoor_dining_area,chair,right + middle + far,dark,vertical,around the table,dark,rectangular,smooth + wood
+scene_easy_2_6,indoor_dining_area,table,center + middle + far,dark,horizontal,middle of the scene,dark,rectangular,smooth + wood
+scene_easy_3_1,kitchen,coffee maker,center + center + medium,red,upright,on the counter,medium,rectangular,smooth + metal
+scene_easy_3_1,kitchen,lamp,right + upper + medium,white,upright,on the wall,low,square,smooth + metal
+scene_easy_3_1,kitchen,microwave,center-right + center + medium,white,upright,on the counter,medium,rectangular,smooth + metal
+scene_easy_3_1,kitchen,toaster,center + center + medium,white,upright,on the counter,medium,cylindrical,smooth + metal
+scene_easy_3_11,kitchen,espresso machine,left + below + moderate,red and black,upright,left side of the counter,dim,rectangular,smooth + metal and plastic
+scene_easy_3_11,kitchen,lamp,center + below + moderate,brown and cream,upright,on top of the espresso machine,dim,cylindrical,smooth + metal and fabric
+scene_easy_3_11,kitchen,microwave,right + below + moderate,silver and black,upright,right side of the counter,dim,rectangular,smooth + metal and plastic
+scene_easy_3_11,kitchen,tiled wall,full width + full height + far,green,vertical,background,dim,rectangular,smooth + ceramic
+scene_easy_3_11,kitchen,toaster,center + below + moderate,white and black,upright,middle of the counter,dim,rectangular,smooth + plastic and metal
+scene_easy_3_6,Kitchen countertop scene,Espresso machine,Left + Center + Far,Red and black,Horizontal,Center left,Dim,Rectangular,Smooth + Metal
+scene_easy_3_6,Kitchen countertop scene,Lights,Center + Top + Far,White,Upright,Top center,Dim,Cylindrical,Smooth + Glass
+scene_easy_3_6,Kitchen countertop scene,Microwave,Right + Center + Far,White,Horizontal,Right of center,Dim,Rectangular,Smooth + Metal and plastic
+scene_easy_3_6,Kitchen countertop scene,Toaster,Center + Center + Far,White,Horizontal,Left of center,Dim,Rounded rectangular,Smooth + Plastic
+scene_hard_1_1,dining room,chairs,surrounding + center + far,black,vertical,surrounding the table,dark,rectangular,smooth + wood
+scene_hard_1_1,dining room,paintings,center and right + center + far,dark,vertical,walls,dim,rectangular,smooth + unknown
+scene_hard_1_1,dining room,table,center + center + far,brown,horizontal,center,dark,rectangular,smooth + wood
+scene_hard_1_1,dining room,wallpaper,all sides + center + far,beige,vertical,walls,dim,flat,patterned + wallpaper
+scene_hard_1_11,Dining Room,Chairs,center + front + near,light brown,upright,around table,dim,rectangular,smooth + wood
+scene_hard_1_11,Dining Room,Table,center + front + near,dark brown,horizontal,center,dim,rectangular,smooth + wood
+scene_hard_1_11,Dining Room,Wallpaper,background + back + far,cream and dark brown,vertical,walls,dim,rectangular,flat + plaster
+scene_hard_1_6,Interior,Chairs,Bottom + Center + Medium,Dark,Vertical,Bottom,Very Low,Rectangular,Smooth + Wood
+scene_hard_1_6,Interior,Paintings,Center + Top + Far,Multicolored,Vertical,Background,Low,Rectangular,Patterned + Canvas
+scene_hard_1_6,Interior,Table,Center + Center + Medium,Dark,Horizontal,Center,Very Low,Rectangular,Smooth + Wood
+scene_hard_2_1,kitchen,cabinet,center + center + medium,brown,upright,center,dim,rectangular,smooth + wood
+scene_hard_2_1,kitchen,glasses,center + center + medium,white,upright,on shelves,bright,cylindrical,smooth + ceramic
+scene_hard_2_1,kitchen,plates,center + bottom + medium,white,stacked,on shelves,dim,circular,smooth + ceramic
+scene_hard_2_1,kitchen,trash can,left + bottom + close,black,upright,left,dim,cylindrical,smooth + plastic
+scene_hard_2_1,kitchen,wall lamp,right + top + far,gold,fixed on wall,right,bright,decorative,smooth + metal
+scene_hard_2_11,interior,cabinet,center + center + far,brown,upright,center of image,dim,rectangular,smooth + wood
+scene_hard_2_11,interior,plates and glasses,center + center + far,white,upright,on shelves,dim,cylindrical and round,smooth + ceramic or glass
+scene_hard_2_11,interior,tiles,full width + full height + far,green and white,upright,background,dim,square,smooth + ceramic
+scene_hard_2_11,interior,wall sconce lamp,right + top + far,gold,upright,right,dim,curved,smooth + metal
+scene_hard_2_6,dimly lit kitchen with plates on a table,plates,center + middle + medium,off-white,horizontal,center,dim,circular,smooth + ceramic
+scene_hard_3_1,"indoor, bookshelf with items",binder,right + top + far,blue,vertical,on top shelf,dark,rectangular,smooth + plastic
+scene_hard_3_1,"indoor, bookshelf with items",books,left + top + far,multicolored,horizontal,on top shelf,bright,rectangular,smooth + paper
+scene_hard_3_1,"indoor, bookshelf with items",bookshelf,center + center + far,brown,upright,against the wall,dark,rectangular,smooth + wood
+scene_hard_3_1,"indoor, bookshelf with items",magazines,center + middle + far,multicolored,horizontal,on middle shelf,bright,rectangular,smooth + paper
+scene_hard_3_1,"indoor, bookshelf with items",notebooks,right + bottom + far,black,horizontal,on bottom shelf,dark,rectangular,smooth + paper
+scene_hard_3_1,"indoor, bookshelf with items",smartphone,left + middle + far,black,horizontal,on middle shelf,dark,rectangular,smooth + metal and glass
+scene_hard_3_11,indoor room with bookshelf,binder,right + center + mid,blue,standing,middle shelf,dim,rectangular,smooth + plastic/paper
+scene_hard_3_11,indoor room with bookshelf,books,center + center + mid,various,horizontal and vertical stack,on the shelves,dim,rectangular,smooth + paper
+scene_hard_3_11,indoor room with bookshelf,bookshelf,center + center + mid,brown,upright,center,dim,rectangular,smooth + wood
+scene_hard_3_6,interior room,books,center + center + far,various,stacked,on shelf,dark,rectangular,smooth + paper
+scene_hard_3_6,interior room,bookshelf,center + center + far,brown,upright,against wall,dark,rectangular,smooth + wood
+scene_medium_1_1,indoor room with bookshelf,VHS tape,left + center + medium,black,horizontal,on shelf,dim,rectangular,smooth + plastic
+scene_medium_1_1,indoor room with bookshelf,VHS tapes,center + top + medium,black,horizontal,on top shelf,dim,rectangular,smooth + plastic
+scene_medium_1_1,indoor room with bookshelf,book,right + center + medium,blue,horizontal,on shelf,dim,rectangular,smooth + paper
+scene_medium_1_1,indoor room with bookshelf,globe,left + center + medium,yellow and blue,upright,on shelf,dim,spherical,smooth + plastic
+scene_medium_1_1,indoor room with bookshelf,newspaper,center + center + medium,white and black,horizontal,on shelf,dim,rectangular,smooth + paper
+scene_medium_1_1,indoor room with bookshelf,shelf,center + center + medium,brown,upright,center,dim,rectangular,smooth and wooden + wood
+scene_medium_1_1,indoor room with bookshelf,wall sconce,left + top + medium,brown,attached to wall,left wall,dim,"rectangular shades, ornate structure",smooth and metallic + metal and fabric
+scene_medium_1_11,indoor room with furniture,books,right + center + medium,variety,horizontal,on desk,dim,rectangular,smooth + paper
+scene_medium_1_11,indoor room with furniture,desk,center + center + medium,brown,horizontal,center,dim,rectangular,smooth + wood
+scene_medium_1_11,indoor room with furniture,globe,left + center + medium,blue and green,round,on desk,dim,spherical,smooth + plastic
+scene_medium_1_11,indoor room with furniture,shelf,center + center + medium,brown,vertical,right,dim,rectangular,smooth + wood
+scene_medium_1_11,indoor room with furniture,wall lamp,left + top + medium,brass,vertical,left,dim,irregular,smooth + metal and glass
+scene_medium_1_6,indoor room,books,center + middle + near,varied,upright,on the shelf,dark,rectangular,smooth + paper
+scene_medium_1_6,indoor room,shelf,center + middle + near,brown,horizontal,on the floor,dark,rectangular,smooth + wood
+scene_medium_1_6,indoor room,wall lamp,center + high + far,silver,vertical,on the wall,bright,half-circle,smooth + metal
+scene_medium_2_1,Kitchen,Coffee Cups,Center + Mid + Near,Blue,Upright,Countertop near sink,Medium,Cylindrical,Smooth + Plastic
+scene_medium_2_1,Kitchen,Dishwasher,Center + Lower + Near,Grey,Installed,Countertop next to sink,Medium,Rectangular,Smooth + Metallic
+scene_medium_2_1,Kitchen,Mug,Left + Mid + Near,Blue,Upright,Countertop near sink,Medium,Round with handle,Smooth + Plastic
+scene_medium_2_1,Kitchen,Sink,Right + Mid + Near,Grey,Built-in,Attached to countertop,Medium,Rectangular,Smooth + Metallic
+scene_medium_2_11,kitchen,coffee cups,center + at eye level + mid,blue and white,upright,on the counter,medium,cylindrical,smooth + paper
+scene_medium_2_11,kitchen,dishwasher,left + below eye level + mid,gray,vertical,below the counter,medium,rectangular,smooth + metal and plastic
+scene_medium_2_11,kitchen,faucet,right + at eye level + mid,gray,vertical,on the counter,medium,rounded,smooth + metal
+scene_medium_2_11,kitchen,mug,left + at eye level + mid,blue,upright,on the counter,medium,cylindrical with handle,smooth + ceramic
+scene_medium_2_11,kitchen,sink,right + at eye level + mid,gray,horizontal,on the counter,medium,complex,smooth + metal
+scene_medium_2_6,kitchen,cups,center + middle + far,blue,upright,on the counter,dark,cylindrical,smooth + plastic
+scene_medium_2_6,kitchen,dishwasher,bottom center + bottom + far,white,upright,below the counter,dark,rectangular,smooth + metal
+scene_medium_2_6,kitchen,faucet,right + middle + far,black,upright,next to the sink,dark,curved,smooth + metal
+scene_medium_2_6,kitchen,sink,right + middle + far,white,upright,on the counter,dark,rectangular,smooth + metal
+scene_medium_3_1,Bedroom,Crib,Left + Below + Mid-distance,Brown,Upright,Near the window,Dark,Rectangular,Smooth + Wood
+scene_medium_3_1,Bedroom,Rocking Horse,Center + Below + Near,Dark Brown,Upright,Under the light,Dark,Horse-shaped,Smooth + Wood
+scene_medium_3_1,Bedroom,Wall Light,Center + Above + Far,Yellow,Upright,On the wall,Bright,Twin Lamp,Smooth + Metal
+scene_medium_3_1,Bedroom,Wallpaper,Center + Above + Far,Beige,Upright,On the wall,Dim,Sheet,Patterned + Fabric
+scene_medium_3_11,nursery or child's room,chairs,right + same level + far,brown and blue,upright,back right,dim,rectangular,smooth + wood
+scene_medium_3_11,nursery or child's room,cribs,left + same level + far,brown and blue,upright,back left,dim,rectangular,smooth + wood
+scene_medium_3_11,nursery or child's room,rocking horse,center + same level + medium distance,white with a hint of pink,upright,center,dim,horse-shaped,smooth + wood
+scene_medium_3_11,nursery or child's room,wall lamp,center + above + far,brown and white,attached to wall,back center,dim,rounded,smooth + metal and glass
+scene_medium_3_6,dimly lit room,beds,left + middle + far,tan,upright,center,dim,rectangular,soft + fabric and wood
+scene_medium_3_6,dimly lit room,lamp,left + upper section + moderate,white,upright,left-center,dim,bulb-shaped,smooth + metal or plastic
+scene_medium_3_6,dimly lit room,rocking horse,center + lower section + moderate distance,brown,horizontal,center,dim,horse-shaped,smooth + wood

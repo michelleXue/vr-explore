@@ -5,6 +5,10 @@ from typing import List
 import os
 import cv2
 
+short_prompt = """
+What is in the picture?
+"""
+
 prompt = """
 Your task is to analyze the provided image and return structured data. Follow these rules strictly:
 
@@ -30,6 +34,7 @@ Your task is to analyze the provided image and return structured data. Follow th
 prompt_2 = """
 Examine the image carefully to see if there are any missing items. If there are, add them and return the complete JSON.
 """
+
 class DetectedObject(BaseModel):
     object_name: str  # Object name with unique identifier (e.g., "Chair A", "Chair B")
     color: str
@@ -71,37 +76,40 @@ def analyze_image(image_path):
             response_format=SceneAnalysis
         ).choices[0].message.content
     
-    # First analysis
-    messages.append({
-        "role": "user",
-        "content": [
-            {
-                "type": "image_url",
-                "image_url": {
-                    "url": f"data:image/jpeg;base64,{base64_image}",
-                    "detail": "high"
-                }
-            },
-            {"type": "text", "text": prompt}
-        ]
-    })
+    result = None
     
-    result_1 = get_completion(messages)
-
-    messages.extend([
-        {"role": "assistant", "content": [{"type": "text", "text": result_1}]},
-        {"role": "user", "content": [{"type": "text", "text": prompt_2}]}
-    ])
-    
-    # Second analysis
-    result_2 = get_completion(messages)
+    # Process each prompt in sequence
+    for i, current_prompt in enumerate(prompts):
+        if i == 0:
+            # First prompt always includes the image
+            messages.append({
+                "role": "user",
+                "content": [
+                    {
+                        "type": "image_url",
+                        "image_url": {
+                            "url": f"data:image/jpeg;base64,{base64_image}",
+                            "detail": "high"
+                        }
+                    },
+                    {"type": "text", "text": current_prompt}
+                ]
+            })
+        else:
+            # Subsequent prompts build on previous results
+            messages.extend([
+                {"role": "assistant", "content": [{"type": "text", "text": result}]},
+                {"role": "user", "content": [{"type": "text", "text": current_prompt}]}
+            ])
+        
+        result = get_completion(messages)
     
     # Save final result
     image_filename = os.path.splitext(os.path.basename(image_path))[0]
     with open(f"{image_filename}.json", 'w', encoding='utf-8') as f:
-        f.write(result_2)
+        f.write(result)
     
-    return result_2
+    return result
 
 def process_images_in_folder(folder_path):
     # List all files in the folder
@@ -112,7 +120,7 @@ def process_images_in_folder(folder_path):
         # Check if it's an image file
         if filename.lower().endswith(('_1.png', '_6.png', '_11.png')):
             # Analyze the image
-            result = analyze_image(file_path)
+            result = analyze_image(file_path, prompts=[prompt, prompt_2, prompt_2])
             
 if __name__ == "__main__":
     folder_path = "dataset"

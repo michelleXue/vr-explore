@@ -52,5 +52,7 @@ def json_to_csv(folder_path: str, output_csv: str = "scene_analysis.csv"):
     df.to_csv(folder_path + "/" + output_csv, index=False)
     print(f"CSV file created successfully: {output_csv}")
 
-json_to_csv("exp1/chatgpt-4o-latest")
-json_to_csv("exp1/gpt-4o-2024-08-06")
+# json_to_csv("exp1/chatgpt-4o-latest")
+# json_to_csv("exp1/gpt-4o-2024-08-06")
+# json_to_csv("exp2/gpt-4o-2024-08-06")
+json_to_csv("exp3/gpt-4o-2024-08-06")
