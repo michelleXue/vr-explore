@@ -34,16 +34,13 @@ def json_to_csv(folder_path: str, output_csv: str = "scene_analysis.csv"):
                     'pic_name': pic_name,
                     'scene_type': scene_type,
                     'object_name': obj['object_name'],
-                    'relationship_horizontal': obj['relationship_with_user_horizontal'],
-                    'relationship_vertical': obj['relationship_with_user_vertical'],
-                    'relationship_distance': obj['relationship_with_user_distance'],
+                    'relationship_with_user': obj['relationship_with_user_horizontal'] + " + " + obj['relationship_with_user_vertical'] + " + " + obj['relationship_with_user_distance'],
                     'color': obj['color'],
                     'orientation': obj['orientation'],
                     'location': obj['location'],
                     'brightness': obj['brightness'],
                     'shape': obj['shape'],
-                    'texture': obj['texture'],
-                    'material': obj['material'],
+                    'texture': obj['texture'] + " + " + obj['material'],
                 }
                 all_objects.append(object_data)
     
@@ -55,5 +52,5 @@ def json_to_csv(folder_path: str, output_csv: str = "scene_analysis.csv"):
     df.to_csv(folder_path + "/" + output_csv, index=False)
     print(f"CSV file created successfully: {output_csv}")
 
-json_to_csv("chatgpt-4o-latest")
-json_to_csv("gpt-4o-2024-08-06")
+json_to_csv("exp1/chatgpt-4o-latest")
+json_to_csv("exp1/gpt-4o-2024-08-06")
