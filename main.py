@@ -60,7 +60,7 @@ def encode_image(image_path):
     _, buffer = cv2.imencode('.jpg', image)
     return base64.b64encode(buffer).decode('utf-8')
 
-def analyze_image(image_path):
+def analyze_image(image_path, prompts=[prompt]):
     client = OpenAI(
         api_key="",
         base_url=""
@@ -71,7 +71,7 @@ def analyze_image(image_path):
     
     def get_completion(messages):
         return client.beta.chat.completions.parse(
-            model="chatgpt-4o-latest",
+            model="gpt-4o-2024-08-06",
             messages=messages,
             response_format=SceneAnalysis
         ).choices[0].message.content
