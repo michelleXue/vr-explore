@@ -1,0 +1,190 @@
+pic_name,object_name,spatial_relationship_with_user
+scene_easy_1_1,Toilet,center
+scene_easy_1_1,Toilet Brush,right
+scene_easy_1_1,Toilet Paper Roll Holder,right
+scene_easy_1_1,Toilet Roll,right
+scene_easy_1_11,Shelf,left upper
+scene_easy_1_11,Toilet,centered front
+scene_easy_1_11,Toilet Brush,right lower
+scene_easy_1_11,Toilet Paper Roll,right upper
+scene_easy_1_6,Toilet A,center
+scene_easy_1_6,Toilet Paper Holder A,right
+scene_easy_1_6,Toilet Paper Roll A,bottom right
+scene_easy_2_1,Chair A,left
+scene_easy_2_1,Chair B,center
+scene_easy_2_1,Chair C,right
+scene_easy_2_1,Table,center
+scene_easy_2_11,Chair A,left
+scene_easy_2_11,Chair B,center front
+scene_easy_2_11,Chair C,right
+scene_easy_2_11,Chair D,far right
+scene_easy_2_11,Table,center
+scene_easy_2_6,Chair A,left of the table
+scene_easy_2_6,Chair B,right of the table
+scene_easy_2_6,Chair C,far side of the table
+scene_easy_2_6,Chair D,near side of the table
+scene_easy_2_6,Table,center of the scene
+scene_easy_3_1,Cabinet E,bottom center of image
+scene_easy_3_1,Espresso Machine A,center left on countertop
+scene_easy_3_1,Microwave C,center right on countertop
+scene_easy_3_1,Toaster B,center on countertop
+scene_easy_3_1,Wall Lamp D,top center on wall
+scene_easy_3_11,Cabinet,bottom center
+scene_easy_3_11,Espresso Machine,center left
+scene_easy_3_11,Microwave,center right
+scene_easy_3_11,Table Lamp,top left
+scene_easy_3_11,Toaster,center
+scene_easy_3_6,Coffee Machine,"left center, on the counter"
+scene_easy_3_6,Counter,"front, near user"
+scene_easy_3_6,Dome-Shape Container,"center, on the counter"
+scene_easy_3_6,Lights,"above, on the wall"
+scene_easy_3_6,Microwave,"right, on the counter"
+scene_hard_1_1,Chair A,around the table
+scene_hard_1_1,Chair B,around the table
+scene_hard_1_1,Chair C,around the table
+scene_hard_1_1,Chair D,around the table
+scene_hard_1_1,Chair E,around the table
+scene_hard_1_1,Chair F,around the table
+scene_hard_1_1,Chair G,around the table
+scene_hard_1_1,Chair H,around the table
+scene_hard_1_1,Chair I,around the table
+scene_hard_1_1,Painting A,on the wall
+scene_hard_1_1,Painting B,on the wall
+scene_hard_1_1,Painting C,on the wall
+scene_hard_1_1,Table,center of the room
+scene_hard_1_11,Chair A,left front
+scene_hard_1_11,Chair B,left center
+scene_hard_1_11,Chair C,left back
+scene_hard_1_11,Chair D,center back
+scene_hard_1_11,Chair E,right back
+scene_hard_1_11,Chair F,right center
+scene_hard_1_11,Chair G,right front
+scene_hard_1_11,Painting A,left wall
+scene_hard_1_11,Painting B,right wall
+scene_hard_1_11,Table,center front
+scene_hard_1_6,Chairs,around the table
+scene_hard_1_6,Paintings,on the walls
+scene_hard_1_6,Table,center of the room
+scene_hard_2_1,Cabinet A,In front
+scene_hard_2_1,Glass A,On the middle shelf of Cabinet A
+scene_hard_2_1,Glass B,On the middle shelf of Cabinet A
+scene_hard_2_1,Glass C,On the middle shelf of Cabinet A
+scene_hard_2_1,Plate A,"On the bottom shelf of Cabinet A, left side"
+scene_hard_2_1,Plate B,"On the bottom shelf of Cabinet A, right side"
+scene_hard_2_1,Tile Floor,Below all objects
+scene_hard_2_1,Trash Can A,To the left of Cabinet A
+scene_hard_2_1,Wall Lamp A,To the right of Cabinet A
+scene_hard_2_11,Cabinet,center
+scene_hard_2_11,Floor,bottom of image
+scene_hard_2_11,Glasses,on middle shelf of cabinet
+scene_hard_2_11,Plate Stack,center on cabinet
+scene_hard_2_11,Single Plate,left of plate stack on cabinet
+scene_hard_2_11,Tiles,background
+scene_hard_2_11,Trash Can,left of cabinet
+scene_hard_2_11,Wall Lamp,right of cabinet
+scene_hard_2_6,Cans A,center
+scene_hard_2_6,Lamp A,right
+scene_hard_2_6,Plates A,center-right
+scene_hard_2_6,Shelf A,center
+scene_hard_2_6,Trash Can A,left
+scene_hard_3_1,Book A,on the top shelf of the bookshelf
+scene_hard_3_1,Book B,on the top shelf of the bookshelf
+scene_hard_3_1,Book C,on the second shelf of the bookshelf
+scene_hard_3_1,Book D,on the bottom shelf of the bookshelf
+scene_hard_3_1,Books,right side of the second shelf of the bookshelf
+scene_hard_3_1,Bookshelf,center of the image
+scene_hard_3_1,File Binder,on the top shelf of the bookshelf
+scene_hard_3_1,Pencil,on the top shelf of the bookshelf
+scene_hard_3_1,Smartphone,on the second shelf of the bookshelf
+scene_hard_3_11,Book A (top shelf),"in front of, on the bookshelf, left side"
+scene_hard_3_11,Book B (top shelf),"in front of, on the bookshelf, left side"
+scene_hard_3_11,Book C (bottom shelf),"in front of, on the bookshelf, left side"
+scene_hard_3_11,Bookshelf,in front of
+scene_hard_3_11,Chair,to the left of
+scene_hard_3_11,File (second shelf),"in front of, on the bookshelf, center"
+scene_hard_3_11,Notebook A (second shelf),"in front of, on the bookshelf, right side"
+scene_hard_3_11,Notebook B (third shelf),"in front of, on the bookshelf, center right"
+scene_hard_3_11,Small Object (third shelf),"in front of, on the bookshelf, left side"
+scene_hard_3_6,Book A,"On the first shelf of Bookshelf A, to the left"
+scene_hard_3_6,Book B,"On the first shelf of Bookshelf A, to the right of Book A"
+scene_hard_3_6,Book C,"On the third shelf of Bookshelf A, to the left"
+scene_hard_3_6,Bookshelf A,"In front of the user, at the center"
+scene_hard_3_6,Decorative Wallpaper,Behind the Bookshelf A
+scene_hard_3_6,File A,"On the first shelf of Bookshelf A, to the right of Book B"
+scene_hard_3_6,Notebook A,"On the second shelf of Bookshelf A, at the center"
+scene_hard_3_6,Phone A,"On the second shelf of Bookshelf A, to the right of Notebook A"
+scene_hard_3_6,Shelf A,"On the bookshelf, between the first and second shelf"
+scene_medium_1_1,Book,"center, on table, far right"
+scene_medium_1_1,Cabinet,center
+scene_medium_1_1,Drawer,"center, below table"
+scene_medium_1_1,Globe,"center, on table, left side"
+scene_medium_1_1,Newspaper,"center, on table, right side"
+scene_medium_1_1,VHS Tape 1,"center, on middle shelf, left side"
+scene_medium_1_1,VHS Tape 2,"center, on middle shelf, right side"
+scene_medium_1_1,VHS Tape 3,"center, on table, middle"
+scene_medium_1_1,Wall Lamp,left and above
+scene_medium_1_11,Book A,on desk of shelf unit
+scene_medium_1_11,Globe A,on desk of shelf unit
+scene_medium_1_11,Magazine A,on desk of shelf unit
+scene_medium_1_11,Notebook A,on desk of shelf unit
+scene_medium_1_11,Shelf Unit A,center
+scene_medium_1_11,VHS Tape A,on top shelf of shelf unit
+scene_medium_1_11,VHS Tape B,on top shelf of shelf unit
+scene_medium_1_11,VHS Tape C,on desk of shelf unit
+scene_medium_1_11,Wall Lamp A,above center-left wall
+scene_medium_1_6,Book E,on top of cabinet
+scene_medium_1_6,Cabinet A,in front
+scene_medium_1_6,File I,right on top of cabinet
+scene_medium_1_6,Lamp C,above cabinet to the left
+scene_medium_1_6,Notebook H,on top of cabinet
+scene_medium_1_6,Shelf B,above cabinet
+scene_medium_1_6,Sphere Object D,on top of cabinet
+scene_medium_1_6,Unknown Object F,on shelf
+scene_medium_1_6,VHS Tape G,on top of cabinet
+scene_medium_2_1,Counter,in front of user
+scene_medium_2_1,Cup A,"on counter, center left"
+scene_medium_2_1,Cup B,"on counter, center"
+scene_medium_2_1,Dishwasher,in front of user
+scene_medium_2_1,Faucet,above sink
+scene_medium_2_1,Mug,"on counter, left side"
+scene_medium_2_1,Sink,"on counter, right side"
+scene_medium_2_1,Wall decoration,"on wall, above sink"
+scene_medium_2_11,Cup B,center
+scene_medium_2_11,Cup C,center
+scene_medium_2_11,Dishwasher H,bottom left
+scene_medium_2_11,Faucet E,right
+scene_medium_2_11,Mug A,center forefront
+scene_medium_2_11,Octagonal object F,right background
+scene_medium_2_11,Sink D,right
+scene_medium_2_11,Stove G,far right
+scene_medium_2_6,Cabinet,In front of the user
+scene_medium_2_6,Container,Near the cups on the countertop
+scene_medium_2_6,Countertop,In front of the user on the cabinet
+scene_medium_2_6,Cup A,On the countertop
+scene_medium_2_6,Cup B,On the countertop
+scene_medium_2_6,Cup C,On the countertop
+scene_medium_2_6,Dishwasher,Below the cabinet
+scene_medium_2_6,Faucet,Above the sink
+scene_medium_2_6,Sink,Next to the cups on the countertop
+scene_medium_3_1,Box,far right corner
+scene_medium_3_1,Chair A,right of Crib B
+scene_medium_3_1,Chair B,far right
+scene_medium_3_1,Crib A,center left
+scene_medium_3_1,Crib B,"center left, next to Crib A"
+scene_medium_3_1,Lamp,center on wall
+scene_medium_3_1,Rocking Horse,center foreground
+scene_medium_3_1,Window,right on wall
+scene_medium_3_11,Chair A,right center
+scene_medium_3_11,Chair B,right center
+scene_medium_3_11,Crib A,center left
+scene_medium_3_11,Crib B,center
+scene_medium_3_11,Rocking Horse,bottom center
+scene_medium_3_11,Wall Lamp,top center
+scene_medium_3_11,Window,top right
+scene_medium_3_6,Bed A,behind and to the left of the rocking horse
+scene_medium_3_6,Bed B,to the right of bed A
+scene_medium_3_6,Chair A,to the far right of the beds
+scene_medium_3_6,Chair B,next to chair A
+scene_medium_3_6,Rocking Horse,closest to the user
+scene_medium_3_6,Wall Lamp,above the beds
+scene_medium_3_6,Window,on the right wall

@@ -1,6 +1,6 @@
 import os
 from openai import OpenAI
-from object_detection import detect_objects, DETECTION_PROMPT, VERIFICATION_PROMPT
+from object_detection import detect_objects, DETECTION_PROMPT, VERIFICATION_PROMPT, SIMPLIFIED_SPATIAL_RELATIONSHIP_DETECTION_PROMPT
 from same_object_detection import compare_objects, COMPARISON_PROMPT, VERIFICATION_PROMPT as COMPARISON_VERIFICATION_PROMPT
 from itertools import combinations
 import concurrent.futures
@@ -18,13 +18,33 @@ def call_api(messages, response_model):
         response_format=response_model
     ).choices[0].message.content
 
-def object_detection_in_folder(folder_path):
+def object_detection_in_folder(folder_path, prompts):
     """Process all images in the specified folder"""
+    # Create a list of tasks
+    tasks = []
     for filename in os.listdir(folder_path):
         if filename.lower().endswith(('_1.png', '_6.png', '_11.png')):
             file_path = os.path.join(folder_path, filename)
-            result = detect_objects(file_path, call_api, prompts=[DETECTION_PROMPT])
+            tasks.append(file_path)
 
+    # Process tasks using ThreadPoolExecutor
+    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as executor:
+        futures = []
+        for file_path in tasks:
+            future = executor.submit(
+                detect_objects,
+                file_path,
+                call_api,
+                prompts=prompts
+            )
+            futures.append(future)
+        
+        for future in concurrent.futures.as_completed(futures):
+            try:
+                result = future.result()
+                print(f"Detection completed")
+            except Exception as e:
+                print(f"Detection failed: {e}")
 
 def same_object_detection_in_folder():
     # Define base features
@@ -78,5 +98,5 @@ def same_object_detection_in_folder():
                 print(f"mission failed: {e}")
 
 if __name__ == "__main__":
-    same_object_detection_in_folder()
-    # object_detection_in_folder("dataset")
+    # same_object_detection_in_folder()
+    object_detection_in_folder("dataset", prompts=[SIMPLIFIED_SPATIAL_RELATIONSHIP_DETECTION_PROMPT, VERIFICATION_PROMPT])
