@@ -37,13 +37,22 @@ def same_object_detection_in_folder():
             feature_combinations.append(", ".join(combo))
 
     scenes = [
-        ("dataset-box/scene1_1.png", ["dataset-box/scene1_2.png", "dataset-box/scene1_3.png"]),
-        ("dataset-box/scene2_1.png", ["dataset-box/scene2_2.png", "dataset-box/scene2_3.png"]),
-        ("dataset-box/scene3_1.png", ["dataset-box/scene3_2.png", "dataset-box/scene3_3.png"])
+        # Easy scenes
+        ("dataset-box/scene_easy_1_1.png", ["dataset-box/scene_easy_1_2.png", "dataset-box/scene_easy_1_4.png"]),
+        ("dataset-box/scene_easy_2_1.png", ["dataset-box/scene_easy_2_2.png", "dataset-box/scene_easy_2_4.png"]),
+        ("dataset-box/scene_easy_3_1.png", ["dataset-box/scene_easy_3_2.png", "dataset-box/scene_easy_3_4.png"]),
+        # Medium scenes
+        ("dataset-box/scene_medium_1_1.png", ["dataset-box/scene_medium_1_2.png", "dataset-box/scene_medium_1_4.png"]),
+        ("dataset-box/scene_medium_2_1.png", ["dataset-box/scene_medium_2_2.png", "dataset-box/scene_medium_2_4.png"]),
+        ("dataset-box/scene_medium_3_1.png", ["dataset-box/scene_medium_3_2.png", "dataset-box/scene_medium_3_4.png"]),
+        # Hard scenes
+        ("dataset-box/scene_hard_1_1.png", ["dataset-box/scene_hard_1_2.png", "dataset-box/scene_hard_1_4.png"]),
+        ("dataset-box/scene_hard_2_1.png", ["dataset-box/scene_hard_2_2.png", "dataset-box/scene_hard_2_4.png"]),
+        ("dataset-box/scene_hard_3_1.png", ["dataset-box/scene_hard_3_2.png", "dataset-box/scene_hard_3_4.png"])
     ]
 
     # Test each combination for each scene and comparison
-    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as executor:
         futures = []
         for base_img, comparison_imgs in scenes:
             for comparison_img in comparison_imgs:

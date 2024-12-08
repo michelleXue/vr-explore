@@ -75,11 +75,14 @@ def same_object_detection_json_to_csv(folder_path: str, output_csv: str = "compa
             # Extract filenames from the comparison filename
             # Format: comparison_scene1_1_scene1_2_red_blue_shape.json
             parts = filename[11:-5].split('_')  # Remove 'comparison_' prefix and '.json' suffix
-            image1_name = f"{parts[0]}_{parts[1]}"
-            image2_name = f"{parts[2]}_{parts[3]}"
-            box1_color = parts[4]
-            box2_color = parts[5]
-            feature = parts[6]
+            red_index = parts.index("red")
+            image1_parts = parts[:4]  # First 4 parts for image1
+            image2_parts = parts[4:red_index]  # Parts between image1 and 'red' for image2
+            image1_name = "_".join(image1_parts)
+            image2_name = "_".join(image2_parts)
+            box1_color = parts[red_index]
+            box2_color = parts[red_index + 1]
+            feature = parts[red_index + 2]
 
             if box1_color == "red":
                 if box2_color == "blue":
@@ -112,15 +115,29 @@ def same_object_detection_json_to_csv(folder_path: str, output_csv: str = "compa
         accuracy = (correct_predictions / total_predictions) * 100
         print(f"Accuracy for {feature}: {accuracy:.2f}% ({correct_predictions}/{total_predictions})")
         
-        # Calculate accuracy for same/different object cases
+        # Calculate detailed metrics for same/different object cases
         for is_same in [True, False]:
             subset_df = feature_df[feature_df['is_same_object_ground_truth'] == is_same]
-            correct = (subset_df['is_same_object'] == subset_df['is_same_object_ground_truth']).sum()
+            predictions = subset_df['is_same_object']
+            ground_truth = subset_df['is_same_object_ground_truth']
+            
+            # Calculate TP, FP, TN, FN
+            tp = ((predictions == True) & (ground_truth == True)).sum()
+            fp = ((predictions == True) & (ground_truth == False)).sum()
+            tn = ((predictions == False) & (ground_truth == False)).sum()
+            fn = ((predictions == False) & (ground_truth == True)).sum()
+            
             total = len(subset_df)
             if total > 0:  # Avoid division by zero
-                sub_accuracy = (correct / total) * 100
+                accuracy = ((tp + tn) / total) * 100
                 same_diff = "same" if is_same else "different"
-                print(f"  - For {same_diff} objects: {sub_accuracy:.2f}% ({correct}/{total})")
+                print(f"  - For {same_diff} objects: {accuracy:.2f}% ({tp + tn}/{total})")
+                print(f"    TP: {tp}, FP: {fp}, TN: {tn}, FN: {fn}")
+                if is_same:
+                    precision = tp / (tp + fp) if (tp + fp) > 0 else 0
+                    recall = tp / (tp + fn) if (tp + fn) > 0 else 0
+                    f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0
+                    print(f"    Precision: {precision:.2f}, Recall: {recall:.2f}, F1: {f1:.2f}")
         print()  # Add blank line between features
     
     # Save to CSV
@@ -129,4 +146,4 @@ def same_object_detection_json_to_csv(folder_path: str, output_csv: str = "compa
 
 if __name__ == "__main__":
     # object_detection_json_to_csv("exp4")
-    same_object_detection_json_to_csv("same_object-reason")
+    same_object_detection_json_to_csv("exp-same_object")
