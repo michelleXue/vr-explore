@@ -30,8 +30,7 @@ class SceneSpatialRelationshipAnalysis(BaseModel):
 DETECTION_PROMPT = """
 Your task is to analyze the provided image and return structured data. Follow these rules strictly:
 
-1. Scene Type:
-   - Provide the type of scene (e.g., dining room, office).
+1. Scene:
    - List every object individually. 
 
 2. For each object, provide:
