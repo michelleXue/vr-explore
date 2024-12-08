@@ -1,0 +1,21 @@
+prompt = """
+Your task is to analyze the provided image and return structured data. Follow these rules strictly:
+
+1. Scene Type:
+   - Provide the type of scene (e.g., dining room, office).
+   - List every object individually. 
+
+2. For each object, provide:
+   - Name: The object name with a unique identifier (e.g., 'Chair A', 'Chair B').
+   - Color
+   - Orientation: facing direction
+   - Location: in the scene
+   - Brightness
+   - Shape
+   - Texture
+   - Material
+   - Spatial Relationship:
+     - Horizontal: Specify left, middle, or right.
+     - Vertical: Specify up, down, or center.
+     - Distance: Specify near, mid-range, or far.
+"""

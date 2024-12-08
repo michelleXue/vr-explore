@@ -1,0 +1,97 @@
+image1_name,image2_name,box1_color,box2_color,feature,is_same_object_ground_truth,is_same_object,confidence_score
+scene1_1,scene1_2,red,blue,None,False,True,0.95
+scene1_1,scene1_2,red,green,None,True,True,0.95
+scene1_1,scene1_3,red,blue,None,False,True,0.95
+scene1_1,scene1_3,red,green,None,True,True,1.0
+scene2_1,scene2_2,red,blue,None,False,False,0.9
+scene2_1,scene2_2,red,green,None,True,True,1.0
+scene2_1,scene2_3,red,blue,None,False,True,0.7
+scene2_1,scene2_3,red,green,None,True,True,0.9
+scene3_1,scene3_2,red,blue,None,False,True,0.95
+scene3_1,scene3_2,red,green,None,True,True,0.9
+scene3_1,scene3_3,red,blue,None,False,True,0.9
+scene3_1,scene3_3,red,green,None,True,True,0.95
+scene1_1,scene1_2,red,blue,color,False,True,1.0
+scene1_1,scene1_2,red,green,color,True,True,0.8
+scene1_1,scene1_3,red,blue,color,False,True,0.85
+scene1_1,scene1_3,red,green,color,True,True,0.9
+scene2_1,scene2_2,red,blue,color,False,False,0.95
+scene2_1,scene2_2,red,green,color,True,True,0.95
+scene2_1,scene2_3,red,blue,color,False,False,0.85
+scene2_1,scene2_3,red,green,color,True,True,0.9
+scene3_1,scene3_2,red,blue,color,False,True,0.95
+scene3_1,scene3_2,red,green,color,True,True,0.95
+scene3_1,scene3_3,red,blue,color,False,False,0.95
+scene3_1,scene3_3,red,green,color,True,True,0.95
+scene1_1,scene1_2,red,blue,"color, orientation and location",False,True,0.9
+scene1_1,scene1_2,red,green,"color, orientation and location",True,True,0.8
+scene1_1,scene1_3,red,blue,"color, orientation and location",False,True,0.85
+scene1_1,scene1_3,red,green,"color, orientation and location",True,True,0.95
+scene2_1,scene2_2,red,blue,"color, orientation and location",False,True,0.9
+scene2_1,scene2_2,red,green,"color, orientation and location",True,True,0.9
+scene2_1,scene2_3,red,blue,"color, orientation and location",False,True,0.95
+scene2_1,scene2_3,red,green,"color, orientation and location",True,True,0.85
+scene3_1,scene3_2,red,blue,"color, orientation and location",False,True,0.75
+scene3_1,scene3_2,red,green,"color, orientation and location",True,False,0.7
+scene3_1,scene3_3,red,blue,"color, orientation and location",False,True,0.85
+scene3_1,scene3_3,red,green,"color, orientation and location",True,False,0.7
+scene1_1,scene1_2,red,blue,"color, shape",False,True,0.85
+scene1_1,scene1_2,red,green,"color, shape",True,True,0.95
+scene1_1,scene1_3,red,blue,"color, shape",False,True,0.95
+scene1_1,scene1_3,red,green,"color, shape",True,True,0.95
+scene2_1,scene2_2,red,blue,"color, shape",False,True,0.95
+scene2_1,scene2_2,red,green,"color, shape",True,True,0.9
+scene2_1,scene2_3,red,blue,"color, shape",False,True,0.95
+scene2_1,scene2_3,red,green,"color, shape",True,True,0.95
+scene3_1,scene3_2,red,blue,"color, shape",False,True,0.9
+scene3_1,scene3_2,red,green,"color, shape",True,True,0.95
+scene3_1,scene3_3,red,blue,"color, shape",False,True,0.95
+scene3_1,scene3_3,red,green,"color, shape",True,True,1.0
+scene1_1,scene1_2,red,blue,"color, shape, orientation and location",False,True,0.85
+scene1_1,scene1_2,red,green,"color, shape, orientation and location",True,True,0.95
+scene1_1,scene1_3,red,blue,"color, shape, orientation and location",False,True,0.95
+scene1_1,scene1_3,red,green,"color, shape, orientation and location",True,True,0.95
+scene2_1,scene2_2,red,blue,"color, shape, orientation and location",False,True,0.9
+scene2_1,scene2_2,red,green,"color, shape, orientation and location",True,True,0.95
+scene2_1,scene2_3,red,blue,"color, shape, orientation and location",False,False,0.8
+scene2_1,scene2_3,red,green,"color, shape, orientation and location",True,True,0.95
+scene3_1,scene3_2,red,blue,"color, shape, orientation and location",False,False,0.95
+scene3_1,scene3_2,red,green,"color, shape, orientation and location",True,True,0.8
+scene3_1,scene3_3,red,blue,"color, shape, orientation and location",False,True,0.95
+scene3_1,scene3_3,red,green,"color, shape, orientation and location",True,True,0.9
+scene1_1,scene1_2,red,blue,orientation and location,False,True,0.85
+scene1_1,scene1_2,red,green,orientation and location,True,True,0.8
+scene1_1,scene1_3,red,blue,orientation and location,False,True,0.9
+scene1_1,scene1_3,red,green,orientation and location,True,True,0.9
+scene2_1,scene2_2,red,blue,orientation and location,False,False,0.6
+scene2_1,scene2_2,red,green,orientation and location,True,True,0.95
+scene2_1,scene2_3,red,blue,orientation and location,False,False,0.8
+scene2_1,scene2_3,red,green,orientation and location,True,False,0.85
+scene3_1,scene3_2,red,blue,orientation and location,False,True,0.9
+scene3_1,scene3_2,red,green,orientation and location,True,True,1.0
+scene3_1,scene3_3,red,blue,orientation and location,False,True,0.95
+scene3_1,scene3_3,red,green,orientation and location,True,False,0.95
+scene1_1,scene1_2,red,blue,shape,False,True,0.9
+scene1_1,scene1_2,red,green,shape,True,True,0.95
+scene1_1,scene1_3,red,blue,shape,False,True,1.0
+scene1_1,scene1_3,red,green,shape,True,True,0.95
+scene2_1,scene2_2,red,blue,shape,False,True,0.85
+scene2_1,scene2_2,red,green,shape,True,True,0.9
+scene2_1,scene2_3,red,blue,shape,False,True,0.95
+scene2_1,scene2_3,red,green,shape,True,False,0.85
+scene3_1,scene3_2,red,blue,shape,False,True,0.95
+scene3_1,scene3_2,red,green,shape,True,True,0.95
+scene3_1,scene3_3,red,blue,shape,False,True,0.95
+scene3_1,scene3_3,red,green,shape,True,True,0.95
+scene1_1,scene1_2,red,blue,"shape, orientation and location",False,True,0.95
+scene1_1,scene1_2,red,green,"shape, orientation and location",True,True,0.95
+scene1_1,scene1_3,red,blue,"shape, orientation and location",False,True,0.95
+scene1_1,scene1_3,red,green,"shape, orientation and location",True,True,0.8
+scene2_1,scene2_2,red,blue,"shape, orientation and location",False,False,0.8
+scene2_1,scene2_2,red,green,"shape, orientation and location",True,True,0.95
+scene2_1,scene2_3,red,blue,"shape, orientation and location",False,True,0.8
+scene2_1,scene2_3,red,green,"shape, orientation and location",True,True,0.9
+scene3_1,scene3_2,red,blue,"shape, orientation and location",False,True,0.95
+scene3_1,scene3_2,red,green,"shape, orientation and location",True,True,0.85
+scene3_1,scene3_3,red,blue,"shape, orientation and location",False,True,0.9
+scene3_1,scene3_3,red,green,"shape, orientation and location",True,True,0.9
