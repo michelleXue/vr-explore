@@ -2,6 +2,7 @@ import os
 from openai import OpenAI
 from object_detection import detect_objects, DETECTION_PROMPT, VERIFICATION_PROMPT, SIMPLIFIED_SPATIAL_RELATIONSHIP_DETECTION_PROMPT
 from same_object_detection import compare_objects, COMPARISON_PROMPT, VERIFICATION_PROMPT as COMPARISON_VERIFICATION_PROMPT
+from object_coordinate_detection import detect_objects_coordinate
 from itertools import combinations
 import concurrent.futures
 
@@ -18,8 +19,15 @@ def call_api(messages, response_model):
         response_format=response_model
     ).choices[0].message.content
 
-def object_detection_in_folder(folder_path, prompts):
-    """Process all images in the specified folder"""
+def process_images_in_folder(folder_path, detection_function, **kwargs):
+    """
+    Generic function to process images in a folder using specified detection function
+    
+    Args:
+        folder_path: Path to the folder containing images
+        detection_function: Function to process each image (detect_objects or detect_objects_coordinate)
+        **kwargs: Additional arguments to pass to the detection function
+    """
     # Create a list of tasks
     tasks = []
     for filename in os.listdir(folder_path):
@@ -32,19 +40,19 @@ def object_detection_in_folder(folder_path, prompts):
         futures = []
         for file_path in tasks:
             future = executor.submit(
-                detect_objects,
+                detection_function,
                 file_path,
                 call_api,
-                prompts=prompts
+                **kwargs
             )
             futures.append(future)
         
         for future in concurrent.futures.as_completed(futures):
             try:
                 result = future.result()
-                print(f"Detection completed")
+                print(f"{detection_function.__name__} completed")
             except Exception as e:
-                print(f"Detection failed: {e}")
+                print(f"{detection_function.__name__} failed: {e}")
 
 def same_object_detection_in_folder():
     # Define base features
@@ -99,4 +107,11 @@ def same_object_detection_in_folder():
 
 if __name__ == "__main__":
     # same_object_detection_in_folder()
-    object_detection_in_folder("dataset", prompts=[SIMPLIFIED_SPATIAL_RELATIONSHIP_DETECTION_PROMPT, VERIFICATION_PROMPT])
+    
+    # process_images_in_folder(
+    #     "dataset", 
+    #     detect_objects, 
+    #     prompts=[SIMPLIFIED_SPATIAL_RELATIONSHIP_DETECTION_PROMPT, VERIFICATION_PROMPT]
+    # )
+    
+    process_images_in_folder("dataset-compressed", detect_objects_coordinate)
